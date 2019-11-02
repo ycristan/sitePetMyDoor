@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/eef4d1033b.js" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	body{
+		background-image: url(imagens/fundo2.jpg);
+		background-attachment: fixed;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+	}
+
+	.container{
+		margin-top: 100px;
+		margin-bottom: 35px;
+		background-color: rgba(255,228,181,0.7);
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 25px;
+	}
+
+	.inside{
+		background-color: rgb(255,165,0);
+		border-radius: 30px;
+		padding-right:30px;
+		padding-left:30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+	}
+
+	label{
+		font-weight: bolder;
+	}
+
+</style>
+
+
+<head>
+	<title>Pet My Door</title>
+</head>
+<body>
+
+
+<!--Barra de navegação-->
+<nav class="navbar navbar-expand-lg nav navbar navbar-light" style="background-color: rgba(255,165,0,0.7);">
+  <a class="navbar-brand" href="#">
+  	<i class="fas fa-paw fa-2x" style="color: green"></i>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html" style="color: green">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: green">Produtos</a>
+      </li>
+      <li class="nav-item active" style="font-weight: bold;">
+        <a class="nav-link" href="#" style="color: white">Contato<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!--Barra de navegação-->
+
+<!--Conteudo principal-->
+<div class="container">
+	
+	<!--inicio formulario-->
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputNome">Nome</label>
+      <input type="text" class="form-control" id="inputNome" placeholder="Informe seu nome" maxlength="40" size="45">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputTelefone">Telefone ou Celular</label>
+      <input type="text" class="form-control" id="inputTelefone" placeholder="(xx)9xxxxxxxx" maxlength="10" size="10">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="seuemail@exemplo.com.br">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEndereco">Endereço</label>
+    <input type="text" class="form-control" id="inputEndereco" placeholder="Rua/Avenida..." maxlength="50" size="50">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCidade">Cidade</label>
+      <input type="text" class="form-control" id="inputCidade" maxlength="20" size="23" placeholder="Informe sua cidade">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputEstado">Estado</label>
+      <select id="inputEstado" class="form-control">
+        <option selected>Escolha...</option>
+        <option>AC</option>
+        <option>AL</option>
+        <option>AP</option>
+        <option>AM</option>
+        <option>BA</option>
+        <option>CE</option>
+        <option>DF</option>
+        <option>ES</option>
+        <option>GO</option>
+        <option>MA</option>
+        <option>MT</option>
+        <option>MS</option>
+        <option>MG</option>
+        <option>PA</option>
+        <option>PB</option>
+        <option>PR</option>
+        <option>PI</option>
+        <option>RJ</option>
+        <option>RN</option>
+        <option>RS</option>
+        <option>RO</option>
+        <option>RR</option>
+        <option>SC</option>
+        <option>SP</option>
+        <option>SE</option>
+        <option>TO</option>
+      </select>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputCEP">CEP</label>
+      <input type="text" class="form-control" id="inputCEP" maxlength="8" size="8" placeholder="Apenas os números">
+    </div>
+  </div>
+	  <div class="form-group">
+	    <label for="inputMensagem">Sua mensagem</label>
+	    <textarea class="form-control" id="inputMensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+	  </div>
+  		<button type="submit" class="btn btn btn-success">Enviar</button>
+</form>
+	<!--fim do formulario-->
+
+
+
+</div> <!--end div container-->
+<!--Conteudo principal-->
+
+
+
+
+</body>
+
+<!--Jquery e JAva Script-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
+
+
+
+</html>
